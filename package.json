@@ -1,0 +1,35 @@
+{
+  "name": "vue-component-loader",
+  "private": false,
+  "version": "0.0.2",
+  "files": [
+    "dist"
+  ],
+  "keywords": ["vue", "component", "loader", "loading"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Manujose21/vue-loading-component"
+  },
+  "type": "module",
+  "main": "./dist/vue-component-loader.umd.js",
+  "module": "./dist/vue-component-loader.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-component-loader.es.js",
+      "require": "./dist/vue-component-loader.umd.js"
+    },
+    "./dist/styles.css": "./dist/style.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.4.19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "vite": "^5.1.4"
+  }
+}
